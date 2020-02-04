@@ -1,4 +1,3 @@
-var state = 0;
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "environment" }, audio: false };     // for selfie modefacingMode: "user"
 // Define constants
@@ -22,18 +21,19 @@ function cameraStart() {
  window.addEventListener("load", cameraStart, false);
 
 
+var state = 0;
 // Show or hide the photo when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
-  if (state == 0){
+  // if (state == 0){
       document.getElementById("camera").style.visibility = "hidden";
       document.getElementById("photo").style.visibility = "visible";
-    state = 1;
-  }
-  else if (state == 1){
-      document.getElementById("photo").style.visibility = "hidden";
-      document.getElementById("camera").style.visibility = "visible";
-    state = 0;
-  }
+  //   state = 1;
+  // }
+  // else if (state == 1){
+  //     document.getElementById("photo").style.visibility = "hidden";
+  //     document.getElementById("camera").style.visibility = "visible";
+  //   state = 0;
+  // }
                 // cameraSensor.width = cameraView.videoWidth;
                 // cameraSensor.height = cameraView.videoHeight;
                 // cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);

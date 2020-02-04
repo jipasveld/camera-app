@@ -25,12 +25,13 @@ function cameraStart() {
 // Show or hide the photo when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
   if (state == 0){
-    
+      document.getElementById("camera").style.visibility = "hidden";
+      document.getElementById("photo").style.visibility = "visible";
     state = 1;
   }
   else if (state == 1){
-    // Show the image that needs to be found
-      window.addEventListener("load", cameraStart, false);
+      document.getElementById("photo").style.visibility = "hidden";
+      document.getElementById("camera").style.visibility = "visible";
     state = 0;
   }
                 // cameraSensor.width = cameraView.videoWidth;

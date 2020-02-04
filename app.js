@@ -18,11 +18,14 @@ function cameraStart() {
         console.error("Oops. Something is broken.", error);
     });
 }
-// Take a picture when cameraTrigger is tapped
+ // Start the video stream when the window loads
+ window.addEventListener("load", cameraStart, false);
+
+
+// Show or hide the photo when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
   if (state == 0){
-      // Start the video stream when the window loads
-      // window.addEventListener("load", cameraStart, false);
+    
     state = 1;
   }
   else if (state == 1){

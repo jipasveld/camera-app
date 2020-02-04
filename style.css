@@ -39,3 +39,8 @@ html, body{
     right: 20px;
     z-index: 2;
 }
+
+
+#photo{
+  z-index: 100;
+}

@@ -1,5 +1,5 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode: "user" }, audio: false };     // for selfie mode: facingMode: "environment"
+var constraints = { video: { facingMode: "environment" }, audio: false };     // for selfie mode: facingMode: "user"
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),

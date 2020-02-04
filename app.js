@@ -25,7 +25,6 @@ var state = 0;
 // Show or hide the photo when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
   // if (state == 0){
-      document.getElementById("camera").style.visibility = "hidden";
       document.getElementById("camera--view").style.visibility = "hidden";
       document.getElementById("photo").style.visibility = "visible";
   //   state = 1;

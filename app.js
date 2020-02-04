@@ -26,6 +26,7 @@ var state = 0;
 cameraTrigger.onclick = function() {
   // if (state == 0){
       document.getElementById("camera").style.visibility = "hidden";
+      document.getElementById("camera--view").style.visibility = "hidden";
       document.getElementById("photo").style.visibility = "visible";
   //   state = 1;
   // }
